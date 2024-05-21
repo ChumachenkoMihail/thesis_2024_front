@@ -1,0 +1,30 @@
+.spektr_section_content{
+ margin: 16px 0 0 0;
+ .spektr_details{
+  margin: 0 0 16px 0;
+  &:last-child{
+   margin: 0;
+  }
+  .details_title{
+   .title_head{
+    display: flex;
+    align-items: center;
+   }
+  p{
+   font-size: 14px;
+   font-weight: 600;
+   margin: 0 0 16px 0;
+   color: #D1D5DB;
+  }
+  }
+ }
+  &.spektr_light{
+   .spektr_details{
+    .details_title{
+     p{
+      color: #2C323B;
+     }
+    }
+   }
+  }
+}

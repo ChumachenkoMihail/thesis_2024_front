@@ -1,0 +1,28 @@
+.accordion_list_item {
+  padding: 16px;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 8px 16px 0 rgba(58, 66, 77, 0.05);
+  background: #1e2329;
+
+  .accordion_item_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .accordion_item_content {
+    height: 0;
+    transition: height 0.5s linear;
+    overflow: hidden;
+    &.item_content_open {
+      height: fit-content;
+      overflow: initial;
+    }
+  }
+  &.accordion_item_light {
+    background: #ffffff;
+    box-shadow: 0 8px 16px 0 #3a424d0d;
+  }
+}

@@ -1,0 +1,142 @@
+.kermit_dropdown {
+  position: relative;
+
+  .dropdown_button {
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 4px 14px;
+    border-radius: 8px;
+    background: #003d8c;
+    border: 2px solid;
+    border-color: #003d8c;
+    cursor: pointer;
+    color: #b0d2ff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    height: 38px;
+
+    svg {
+      width: 20px;
+      height: 20px;
+      path {
+        fill: #b0d2ff;
+      }
+    }
+
+    &.dropdown_open {
+      border-color: #fff;
+      color: #fff;
+
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  .dropdown_select {
+    position: absolute;
+    //right: 0;
+    top: 38px;
+    margin-top: 6px;
+    background: #1e2329;
+    box-shadow: 0 8px 16px 0 rgba(58, 66, 77, 0.1);
+    border: 1px solid #4b5563;
+    border-radius: 8px;
+    z-index: 3;
+    padding: 4px 0;
+    .head_actions_item {
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      cursor: pointer;
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      transition: 0.2s;
+      color: #d1d5db;
+
+      &:hover {
+        background: #3a424d;
+      }
+
+      svg {
+        width: 20px;
+        height: 20px;
+        path {
+          fill: #006eff;
+        }
+      }
+    }
+    &.top {
+      bottom: 39px;
+      top: auto;
+    }
+  }
+  &.dropdown_light {
+    .dropdown_button {
+      background: #e6f1ff;
+      color: #006eff;
+      border-color: #e6f1ff;
+
+      svg {
+        path {
+          fill: #006eff;
+        }
+      }
+
+      &.dropdown_open {
+        border-color: #006eff;
+      }
+    }
+
+    .dropdown_select {
+      background: #fff;
+      border: 1px solid #fff;
+
+      .head_actions_item {
+        color: #2c323b;
+
+        &:hover {
+          background: #e6f1ff;
+        }
+      }
+    }
+  }
+  &.dropdown_clear {
+    .dropdown_button {
+      background: transparent;
+      padding: 0;
+      border: none;
+      height: fit-content;
+    }
+  }
+}
+
+.head_actions_item_no_hover {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+  transition: 0.2s;
+  color: #d1d5db;
+
+  svg {
+    width: 20px;
+    height: 20px;
+    path {
+      fill: #006eff;
+    }
+  }
+}

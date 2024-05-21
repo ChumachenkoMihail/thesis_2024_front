@@ -1,0 +1,49 @@
+.user_balance {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  li {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    border-bottom: 1px solid #e6f1ff;
+    padding: 0 0 12px 0;
+    .credit_name {
+      min-width: 300px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #2c323b;
+    }
+    .credit_count {
+      min-width: 92px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #006eff;
+    }
+    .credit_action {
+      .kermit_btn {
+        width: 24px;
+        height: 24px;
+        padding: 5px;
+        border-radius: 4.364px;
+        &:before {
+          opacity: 0;
+        }
+        .btn_text {
+          svg {
+            width: 13px;
+            height: 13px;
+          }
+        }
+      }
+    }
+  }
+  &.user_balance_dark {
+    li {
+      .credit_name {
+        color: #d1d5db;
+      }
+    }
+  }
+}

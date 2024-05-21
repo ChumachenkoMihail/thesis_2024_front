@@ -1,0 +1,61 @@
+.profile_create {
+  .profile_row {
+    display: grid;
+    grid-template-columns: 2fr 570px;
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    gap: 36px;
+    padding: 0 0 32px 0;
+    border-bottom: 1px solid #4B5563;
+    &.row_light{
+      border-bottom: 1px solid #D1D5DB;
+    }
+    .profile_data_column {
+      .action_create_row{
+        margin: 16px 0 24px 0;
+        display: grid;
+        grid-template-columns: 1fr 185px;
+        gap: 16px;
+        align-items: flex-end;
+      }
+      .selected_action {
+        padding: 16px 0 20px;
+      }
+      .fields_column {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        grid-auto-flow: row;
+        gap: 12px;
+      }
+      .find_ankets_list {
+        display: flex;
+        flex-direction: column;
+        max-height: 310px;
+        overflow-y: auto;
+        &.new_anket_list {
+          margin: 24px 0 0 0;
+          li{
+            border-bottom: 1px solid #4B5563;
+          }
+        }
+        li {
+          padding: 16px 0;
+          border-bottom: 1px solid #4B5563;
+        }
+      }
+      &.column_light {
+        .find_ankets_list {
+          li {
+            border-bottom: 1px solid #D1D5DB;
+          }
+        }
+      }
+    }
+  }
+  .create_profile_actions{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}

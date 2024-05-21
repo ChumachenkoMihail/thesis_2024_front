@@ -1,0 +1,25 @@
+.modal_wrapper {
+  &.modal_top_wrapper {
+    align-items: flex-start;
+  }
+}
+
+.kermit_access_level {
+  background: #323a44;
+  padding: 16px;
+  min-height: auto;
+  margin-bottom: 24px;
+
+  .wrapper_inner {
+    gap: 32px;
+  }
+  .list_wrapper {
+    .column_list {
+      li {
+        .list_item_name {
+          margin: 0 100px 0 0;
+        }
+      }
+    }
+  }
+}

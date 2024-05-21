@@ -1,0 +1,20 @@
+.kermit_error{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  span{
+    color: #FF3A3A;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+  }
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  &.error_light{
+    span{
+      color:#E80000;
+    }
+  }
+}

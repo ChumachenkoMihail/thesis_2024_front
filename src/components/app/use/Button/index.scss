@@ -1,0 +1,277 @@
+.kermit_btn {
+  position: relative;
+  transition: all 200ms ease-out;
+  height: 38px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 14px;
+  border: 2px solid transparent;
+
+  &.btn_light {
+    &.primary {
+      &:hover {
+        background: #004eb5;
+      }
+      &:disabled {
+        background: #b0d2ff;
+        color: #e6f1ff;
+
+        svg {
+          path {
+            fill: #e6f1ff;
+          }
+        }
+      }
+      &:active {
+        border: 2px solid #004eb5;
+      }
+    }
+    &.secondary {
+      background: #fff;
+      &:hover {
+        border: 2px solid #004eb5;
+        background: #004eb5;
+      }
+      &:disabled {
+        background: rgba(176, 210, 255, 0.01);
+        border: 2px solid #b0d2ff;
+        color: #b0d2ff;
+        svg {
+          path {
+            fill: #b0d2ff;
+          }
+        }
+      }
+      &:active {
+        border: 2px solid #006eff;
+        color: #006eff;
+        background: #e6f1ff;
+
+        svg {
+          path {
+            fill: #006eff;
+          }
+        }
+      }
+    }
+    &.tretiary {
+      background: #e6f1ff;
+      color: #006eff;
+      svg {
+        path {
+          fill: #006eff;
+        }
+      }
+      &:hover {
+        background: #006eff;
+        &:before {
+          border-right: 2px solid #004eb5;
+          border-bottom: 2px solid #004eb5;
+        }
+      }
+      &:disabled {
+        background: #b0d2ff;
+        color: #e6f1ff;
+
+        svg {
+          path {
+            fill: #e6f1ff;
+          }
+        }
+      }
+      &:active {
+        border: 2px solid #006eff;
+        background: linear-gradient(0deg, #e6f1ff, #e6f1ff),
+          linear-gradient(0deg, #006eff, #006eff);
+        color: #006eff;
+
+        svg {
+          path {
+            fill: #006eff;
+          }
+        }
+      }
+    }
+    &.transparent {
+      color: #006eff;
+      svg {
+        path {
+          fill: #006eff;
+        }
+      }
+    }
+  }
+
+  &:active {
+    &:before {
+      transform: translate(0px, 0px) !important;
+      border: none !important;
+    }
+  }
+  &:hover {
+    &:before {
+      transform: translate(5px, 5px);
+    }
+  }
+  .btn_text {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    //padding: 10px 16px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 1;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    z-index: -1;
+    transition: transform 200ms;
+  }
+  &:disabled {
+    pointer-events: none;
+  }
+  &.primary {
+    background: #006eff;
+    color: #ffffff;
+    svg {
+      path {
+        fill: #ffffff;
+      }
+    }
+    &:hover {
+      background: #338bff;
+      &:before {
+        border: 2px solid #006eff;
+      }
+    }
+    &:disabled {
+      background: #4b5563;
+      color: #606d7f;
+
+      svg {
+        path {
+          fill: #606d7f;
+        }
+      }
+    }
+    &:active {
+      border: 2px solid #fff;
+      background: linear-gradient(0deg, #006eff, #006eff),
+        linear-gradient(0deg, #004eb5, #004eb5);
+      color: #ffffff;
+    }
+  }
+  &.secondary {
+    border: 2px solid #006eff;
+    background: #2c323b;
+    color: #006eff;
+    svg {
+      path {
+        fill: #006eff;
+      }
+    }
+    &:hover {
+      border: 2px solid #338bff;
+      background: #338bff;
+      color: #fff;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+      &:before {
+        border: 2px solid #006eff;
+      }
+    }
+    &:disabled {
+      background: #2c323b;
+      border: 2px solid #4b5563;
+      color: #4b5563;
+      svg {
+        path {
+          fill: #4b5563;
+        }
+      }
+    }
+    &:active {
+      border: 2px solid #fff;
+      color: #fff;
+      background: #006eff;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  &.tretiary {
+    background: #003d8c;
+    color: #b0d2ff;
+    svg {
+      path {
+        fill: #b0d2ff;
+      }
+    }
+    &:hover {
+      background: #338bff;
+      color: #ffffff;
+      svg {
+        path {
+          fill: #ffffff;
+        }
+      }
+      &:before {
+        border-right: 2px solid #006eff;
+        border-bottom: 2px solid #006eff;
+      }
+    }
+    &:disabled {
+      background: #4b5563;
+      color: #606d7f;
+      svg {
+        path {
+          fill: #606d7f;
+        }
+      }
+    }
+    &:active {
+      border: 2px solid #fff;
+      background: #006eff;
+      color: #fff;
+      svg {
+        path {
+          fill: #fff;
+        }
+      }
+    }
+  }
+  &.transparent {
+    background: transparent;
+    color: #b0d2ff;
+
+    svg {
+      path {
+        fill: #b0d2ff;
+      }
+    }
+  }
+}

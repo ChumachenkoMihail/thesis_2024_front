@@ -1,0 +1,40 @@
+.csv_params_row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  .csv_details_div {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 5px 0;
+    .csv_details_label {
+      font-size: 16px;
+      line-height: 24px;
+      font-weight: 600;
+      color: #006eff;
+    }
+
+    .csv_details_desc {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 500;
+      color: #2c323b;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    &.csv_details_row {
+      flex-direction: initial;
+      gap: 5px;
+    }
+  }
+
+  &.csv_params_row-dark {
+    .csv_details_div {
+      .csv_details_label {
+      }
+      .csv_details_desc {
+        color: #d1d5db;
+      }
+    }
+  }
+}

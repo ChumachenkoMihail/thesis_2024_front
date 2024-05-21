@@ -1,0 +1,33 @@
+.title_icon_wrapper {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 24px;
+  background: #3a424d;
+  svg {
+    path {
+      fill: #9ba5b2;
+    }
+  }
+  &.title_icon_light {
+    background: #e6f1ff;
+    svg {
+      path {
+        fill: #006eff;
+      }
+    }
+  }
+  &.transparent_icon {
+    background: transparent;
+    height: auto;
+    width: auto;
+  }
+
+  &.blue_icon {
+    svg path {
+      fill: #006eff;
+    }
+  }
+}

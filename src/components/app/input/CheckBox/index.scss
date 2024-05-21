@@ -1,0 +1,161 @@
+.kermit_check {
+  cursor: pointer;
+  &.disabled_check {
+    &.check_light {
+      cursor: default;
+      &:hover {
+        pointer-events: none;
+        label {
+          .label_check {
+            border: 2px solid #d1d5db;
+          }
+        }
+      }
+      label {
+        .label_check {
+          border: 2px solid #d1d5db;
+          input {
+            background: #f0f2f4;
+            cursor: default;
+            pointer-events: none;
+          }
+        }
+      }
+    }
+  }
+  &.checked_all {
+    input:checked ~ svg {
+      display: none;
+    }
+    label {
+      .label_check {
+        input:checked {
+          background-color: transparent;
+        }
+        input {
+          &.input_checked {
+            &:before {
+              content: "";
+              position: absolute;
+              width: 12px;
+              height: 3px;
+              background: #ffffff;
+              border-radius: 1px;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+            }
+          }
+        }
+      }
+      span.check_title_bold {
+        font-weight: 700;
+      }
+    }
+  }
+
+  &.check_light {
+    &.checked_all {
+      label {
+        color: #2c323b;
+        .label_check {
+          input:checked {
+            background-color: transparent;
+          }
+          input {
+            &.input_checked {
+              &:before {
+                content: "";
+                position: absolute;
+                width: 10px;
+                height: 2px;
+                border-radius: 8px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+              }
+            }
+          }
+        }
+      }
+    }
+    label {
+      color: #2c323b;
+      .label_check {
+        border: 2px solid #9ba5b2;
+        &:hover {
+          border: 2px solid #006eff;
+        }
+        &.label_checked {
+          background: #006eff;
+          border: 2px solid #006eff;
+          input {
+            background: #006eff;
+          }
+          svg {
+            path {
+              fill: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+  label {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #d1d5db;
+    .label_check {
+      position: relative;
+      min-width: 20px;
+      height: 20px;
+      overflow: hidden;
+      border-radius: 6px;
+      border: 1.5px solid #606d7f;
+
+      &:hover {
+        border: 2px solid #006eff;
+      }
+
+      &.label_checked {
+        border: 2px solid #006eff;
+      }
+
+      input {
+        position: absolute;
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        cursor: pointer;
+        left: 0;
+        margin: 0;
+      }
+
+      input:checked {
+        background: #006eff;
+        position: relative;
+      }
+
+      input:checked ~ svg {
+        opacity: 1;
+      }
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}

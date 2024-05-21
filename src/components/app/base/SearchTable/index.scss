@@ -1,0 +1,163 @@
+table.search_table {
+  background: #1e2329;
+  margin: 0;
+  padding: 4px 16px;
+  width: 100%;
+  border-radius: 16px;
+  border-collapse: collapse;
+  position: relative;
+  z-index: 1;
+  &.search_table_light {
+    background: #fff;
+
+    tr {
+      &:not(:last-of-type) td {
+        border-bottom: 1px solid #e6f1ff;
+      }
+
+      td {
+        color: #2c323b;
+      }
+    }
+
+    .table_col_label {
+      color: #69788c;
+    }
+  }
+
+  tr {
+    &:not(:last-of-type) {
+      td {
+        border-bottom: 1px solid #3a424d;
+      }
+    }
+
+    &:first-of-type {
+      td {
+        padding-top: 12px;
+      }
+    }
+
+    &:last-of-type {
+      td {
+        padding-bottom: 12px;
+      }
+    }
+
+    td {
+      padding: 8px 0;
+      color: #d1d5db;
+
+      &:first-of-type {
+        padding-left: 16px;
+      }
+
+      &:last-of-type {
+        padding-right: 16px;
+      }
+    }
+  }
+
+  .table_cell_check {
+    width: 24px;
+    padding-right: 16px !important;
+  }
+
+  .table_cell_hover {
+    cursor: pointer;
+    padding-right: 18px !important;
+
+    &:hover {
+      .table_col_edit,
+      .table_col_copy {
+        opacity: 1;
+      }
+    }
+  }
+
+  .table_cell_date {
+    width: 160px;
+    padding-right: 18px !important;
+  }
+
+  .table_cell_buttons {
+    //max-width: 430px;
+    padding-right: 16px !important;
+
+    .kermit_btn {
+      //width: 200px;
+    }
+  }
+
+  .table_cell_delete {
+    width: 44px;
+  }
+
+  .table_col {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .table_col_flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table_col_label {
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 600;
+    color: #8793a3;
+  }
+
+  .table_col_value {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    svg {
+      path {
+        fill: #006eff;
+      }
+    }
+  }
+
+  .table_col_edit,
+  .table_col_copy {
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  .table_col_edit {
+    margin-left: auto;
+  }
+
+  .table_col_icon {
+    display: flex;
+    align-items: center;
+    height: 40px;
+
+    svg path {
+      fill: #006eff;
+    }
+  }
+
+  .table_col_date {
+    white-space: nowrap;
+  }
+
+  .table_col_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+
+  .table_col_delete {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

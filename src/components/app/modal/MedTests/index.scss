@@ -1,0 +1,53 @@
+.med_test-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  .row_column {
+    padding: 16px 18px;
+    border-radius: 12px;
+    background: #1E2329;
+    box-shadow: 0px 8px 16px 0px rgba(58, 66, 77, 0.05);
+    .column_title {
+      color: #9BA5B2;
+      font-size: 18px;
+      font-weight: 700;
+      text-align: center;
+      padding: 0 0 16px 0;
+      margin: 0 0 16px 0;
+      border-bottom: 1px solid #3A424D;
+    }
+    .column_content {
+      .content_title {
+        color: #006EFF;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 150%; /* 27px */
+      }
+      .content_desc {
+        color: #D1D5DB;
+        font-size: 14px;
+        font-weight: 500;
+        width: 100%;
+        margin: 0 0 8px 0;
+      }
+    }
+  }
+  &.med_test-row-light {
+    .row_column {
+      background: #FFF ;
+      box-shadow: 0 8px 16px 0px rgba(58, 66, 77, 0.05);
+      .column_title {
+        color: #4B5563;
+        border-bottom: 1px solid #E6F1FF;
+      }
+      .column_content {
+        .content_title {
+          color: #006EFF;
+        }
+        .content_desc {
+          color: #2C323B;
+        }
+      }
+    }
+  }
+}

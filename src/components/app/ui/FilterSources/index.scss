@@ -1,0 +1,56 @@
+.filter_sources_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-auto-flow: row;
+    gap: 24px;
+    .source_item {
+      background: #1e2329;
+      border: 2px solid #1e2329;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: left;
+      transition: all 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  
+      .source_description {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        div {
+          color: #d1d5db;
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 22px;
+        }
+        p {
+          color: #8793a3;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 500;
+        }
+      }
+    }
+    &.sources_list_light {
+      .source_item {
+        background: #fff;
+        border: 2px solid #fff;
+  
+        .source_description {
+          div {
+            color: #2c323b;
+          }
+          p {
+            color: #69788c;
+          }
+        }
+      }
+    }
+  }
+  

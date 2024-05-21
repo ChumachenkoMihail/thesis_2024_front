@@ -1,0 +1,17 @@
+.custom_profiles_content {
+  .custom_fill {
+    color: #ffffff;
+    &.light_title {
+      color: #1e2329;
+    }
+  }
+
+  .custom_profiles_table table {
+    thead tr th,
+    tbody tr td {
+      &:nth-of-type(2), &:nth-of-type(3) {
+        width: 260px;
+      }
+    }
+  }
+}

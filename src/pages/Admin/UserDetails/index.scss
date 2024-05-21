@@ -1,0 +1,67 @@
+.kermit_user_details {
+  display: grid;
+  gap: 32px;
+}
+.kermit_user {
+  //background: #f0f2f4;
+  min-height: fit-content;
+  //&.kermit_user_actions {
+  //  padding: 0;
+  //  .details_container {
+  //    .wrapper_head {
+  //      padding: 18px 24px;
+  //      background: #f0f2f4;
+  //      border-radius: 24px;
+  //    }
+  //  }
+  //}
+  //#F0F2F4
+  .details_container {
+    .wrapper_head {
+      .head_details {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        .head_title {
+          white-space: nowrap;
+          .user_status {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: #2c323b;
+            font-size: 16px;
+            font-weight: 500;
+            .status_dot {
+              width: 12px;
+              height: 12px;
+              border-radius: 50%;
+              background: red;
+              &.active {
+                background: #0ff15c;
+              }
+            }
+          }
+        }
+      }
+      .head_actions {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+    }
+    .user_actions_row {
+      align-items: baseline;
+      margin: 32px 0 24px 0;
+      grid-template-columns: repeat(2, 1fr);
+      display: grid;
+      gap: 40px;
+      @media only screen and (max-width: 1380px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
+      .action_column {
+        display: grid;
+        gap: 32px;
+      }
+    }
+  }
+}

@@ -1,0 +1,79 @@
+.kermit_accordion {
+  margin: 0;
+  border-radius: 14px;
+  background: #2c323b;
+  width: 100%;
+
+  .accordion_head {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+    border-radius: 14px;
+    color: #d1d5db;
+    padding: 12px 16px;
+    background: #152a46;
+
+    &.accordion_open {
+      background: #3a424d;
+    }
+  }
+
+  .accordion_body {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s;
+
+    &.body_open {
+      height: fit-content;
+      padding: 16px 18px;
+    }
+  }
+
+  .accordion_title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    max-width: 580px;
+    word-break: break-word;
+    svg {
+      width: 26px;
+      height: 26px;
+      path {
+        fill: #006eff;
+      }
+      g {
+        path {
+          fill: #006eff;
+        }
+      }
+    }
+  }
+
+  &.accordion_light {
+    background: linear-gradient(
+      180deg,
+      #f6f8fa 0%,
+      rgba(246, 248, 250, 0.5) 100%
+    );
+
+    .accordion_head {
+      color: #2c323b;
+      background: #e6f1ff;
+
+      &.accordion_open {
+        background: #f0f2f4;
+      }
+    }
+  }
+
+  .accordion_chevron {
+    position: relative;
+    top: 4px;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

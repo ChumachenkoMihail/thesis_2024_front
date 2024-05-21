@@ -1,0 +1,19 @@
+.settings_content {
+  display: grid;
+  gap: 18px;
+  .users_manage_row {
+    display: grid;
+    grid-template-rows: 1fr;
+    gap: 18px;
+    grid-auto-flow: row;
+    align-items: self-start;
+    justify-items: center;
+    margin: 0;
+    grid-template-columns: repeat(1, 1fr);
+    @media only screen and (max-width: 1680px) {
+      .kermit_wrapper {
+        max-width: 100%;
+      }
+    }
+  }
+}

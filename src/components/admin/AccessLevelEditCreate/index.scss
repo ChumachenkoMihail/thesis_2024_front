@@ -1,0 +1,34 @@
+.new_access_form {
+  display: grid;
+  gap: 15px;
+  .access_fields {
+    //margin: 24px 0 0 0;
+  }
+  .access_sources {
+    .sources_list {
+      margin: 15px 0 0 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: 1fr;
+      grid-auto-flow: row;
+      gap: 24px;
+    }
+  }
+  .access_column {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    align-items: start;
+    gap: 16px;
+    padding: 0 0 24px 0;
+    border-bottom: 1px solid #4b5563;
+    .kermit_drop_down {
+      width: 100%;
+    }
+  }
+
+  &.access_form_light {
+    .access_column {
+      border-bottom: 1px solid #d1d5db;
+    }
+  }
+}

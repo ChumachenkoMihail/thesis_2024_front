@@ -1,0 +1,21 @@
+.user_access_level {
+  display: grid;
+  gap: 20px;
+  p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #8793a3;
+  }
+  .access_column {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 0 0 8px;
+  }
+  &.access_level_light {
+    p {
+      color: #69788c;
+    }
+  }
+}

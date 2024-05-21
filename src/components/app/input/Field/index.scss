@@ -1,0 +1,198 @@
+.field_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  .label {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    padding: 0 0 0 16px;
+    white-space: nowrap;
+    color: #9ba5b2;
+  }
+  .field {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 8px 12px;
+    height: 38px;
+    background: #1e2329;
+    border-radius: 8px;
+    border: 1px solid #4b5563;
+    position: relative;
+    svg {
+      height: 20px;
+      min-width: 20px;
+      margin: 0;
+
+      path {
+        fill: #006eff;
+      }
+
+      &:hover {
+        path {
+          fill: #004eb5;
+        }
+      }
+      &.error{
+        path {
+          fill: red!important;
+        }
+
+      }
+    }
+    &:hover {
+      border: 1px solid #8abcff;
+    }
+    &:focus-within {
+      border: 1px solid #006eff;
+    }
+    &.field_error {
+      border: 1px solid red;
+    }
+    .error_message {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 17px;
+      white-space: nowrap;
+      position: absolute;
+      bottom: -50%;
+      right: 8px;
+      margin: 0;
+      color: #ff3a3a;
+    }
+    input:-webkit-autofill,
+    input:-webkit-autofill:hover,
+    input:-webkit-autofill:focus,
+    input:-webkit-autofill:active {
+      -webkit-transition:
+        color 9999s ease-out,
+        background-color 9999s ease-out;
+      -webkit-transition-delay: 9999s;
+    }
+    input[type=file]::file-selector-button {
+      display: none;
+    }
+
+    input[type=file]::-webkit-file-upload-button {
+      display: block;
+      width: 0;
+      height: 0;
+      margin-left: -100%;
+    }
+
+    input[type=file]::-ms-browse {
+      display: none;
+    }
+    input[type="file"] {
+      color: transparent;
+    }
+    input {
+      width: 100%;
+      height: 100%;
+      color: #ffffff;
+      padding: 0;
+      background: transparent;
+      border: none;
+      outline: none;
+      font-size: 14px;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      &:focus {
+        border: none;
+        outline: none;
+      }
+      &::placeholder {
+        font-weight: 400;
+        font-size: 14px;
+        color: #606d7f;
+        opacity: 1;
+      }
+    }
+    textarea {
+      background: transparent;
+      border: none;
+      outline: none;
+      width: 100%;
+      color: #ffffff;
+      resize: none;
+      height: 150px;
+      font-size: 14px;
+      &:disabled{
+        pointer-events: none;
+      }
+    }
+  }
+  &.gap-row-5 {
+    .field {
+      gap: 5px;
+    }
+  }
+  &.field_wrapper_light {
+    .label {
+      color: #69788c;
+    }
+    .field {
+      border: 1px solid #d1d5db;
+      background: #ffffff;
+      &:has(input:disabled) {
+        border: 1px solid #d1d5db;
+        background: linear-gradient(0deg, #d1d5db, #d1d5db),
+          linear-gradient(0deg, #f0f2f4, #f0f2f4);
+        pointer-events: none;
+      }
+      &:hover {
+        border: 1px solid #8abcff;
+      }
+      &:focus-within {
+        border: 1px solid #006eff;
+      }
+      svg {
+        path {
+          fill: #006eff;
+        }
+      }
+      textarea {
+        color: #2c323b;
+      }
+      input {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        color: #2c323b;
+        &::-moz-placeholder {
+          opacity: 1;
+        }
+        &:-ms-input-placeholder {
+          opacity: 1;
+        }
+        &::-webkit-input-placeholder {
+          opacity: 1;
+        }
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 24px;
+          color: #bac1ca;
+          opacity: 1;
+        }
+      }
+      &.field_error {
+        border: 1px solid #e80000;
+      }
+      .error_message {
+        color: #e80000;
+      }
+    }
+  }
+  &.w-50 {
+    width: 50%;
+  }
+  .flag-dropdown {
+    display: none;
+  }
+}

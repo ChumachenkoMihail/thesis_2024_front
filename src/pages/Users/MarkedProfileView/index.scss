@@ -1,0 +1,20 @@
+.marked_profile_details{
+  h1{
+    color: #ffffff;
+    text-align: center;
+  }
+  &.marked_profile_light{
+    h1{
+      color: #000000;
+    }
+  }
+  .wrapper_head{
+    gap: 18px;
+    .kermit_btn{
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      padding: 8px 6px;
+    }
+  }
+}

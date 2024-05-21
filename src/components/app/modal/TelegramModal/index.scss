@@ -1,0 +1,10 @@
+.telegram_phones_list {
+  display: grid;
+  gap: 12px;
+  margin: 25px 0 0 0;
+}
+.column_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}

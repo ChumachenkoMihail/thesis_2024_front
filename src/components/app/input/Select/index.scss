@@ -1,0 +1,83 @@
+.select_wrapper {
+  .label {
+    padding: 0 0 0 16px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+
+    color: #9ba5b2;
+  }
+  .error_message {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    white-space: nowrap;
+    position: absolute;
+    bottom: -40%;
+    right: 8px;
+    margin: 0;
+    color: #ff3a3a;
+  }
+  &.select_wrapper_light {
+    .error_message {
+      color: #e80000;
+    }
+    .label {
+      color: #69788c;
+    }
+
+    .kermit-select__menu-list {
+      /* Track */
+      &::-webkit-scrollbar-track {
+        background-color: #f0f2f4;
+      }
+
+      /* Handle */
+      &::-webkit-scrollbar-thumb {
+        background-color: #d1d5db;
+      }
+
+      /* Handle on hover */
+      &::-webkit-scrollbar-thumb:hover {
+        background-color: #b0d2ff;
+      }
+    }
+  }
+  .kermit-select__menu-list {
+    &::-webkit-scrollbar {
+      width: 9px;
+      right: -100px;
+      height: 8px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background-color: #3a424d;
+      border-radius: 8px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background-color: #4b5563;
+      border-radius: 8px;
+      transform: translateY(50%);
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #606d7f;
+    }
+  }
+  .icon_wrapper {
+    position: absolute;
+    left: 10px;
+    top: 9px;
+    z-index: 10;
+
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.kermit_toast {
+  li {
+    color: #ffffff !important;
+    padding: 12px 20px !important;
+    border-radius: 12px !important;
+    display: flex;
+    gap: 10px !important;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    background: #1e2329 !important;
+    svg {
+      width: 24px;
+      height: 24px;
+      path {
+        fill: #bac1ca;
+      }
+    }
+  }
+  li[data-type="success"] {
+    border: 3px solid #1cb300;
+  }
+  li[data-type="error"] {
+    border: 3px solid #e80000;
+  }
+  li[data-type="info"] {
+    border: 3px solid #549eff;
+  }
+  li[data-type="warning"] {
+    border: 3px solid #ffd600;
+  }
+  &.toast_light {
+    li {
+      background: #ffffff !important;
+      color: #4b5563 !important;
+      svg {
+        path {
+          fill: #4b5563;
+        }
+      }
+    }
+  }
+}

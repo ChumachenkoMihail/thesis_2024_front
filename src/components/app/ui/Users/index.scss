@@ -1,0 +1,43 @@
+.kermit_users {
+  background: #323a44;
+  padding: 16px;
+  min-height: auto;
+
+  .wrapper_inner {
+    gap: 24px;
+  }
+  .users_search_action {
+    display: grid;
+    grid-template-columns: 400px 300px;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+}
+
+table.search_table {
+  .table_cell_switch {
+    width: 52px;
+    padding-right: 16px;
+  }
+
+  .table_cell_hover {
+    min-width: 200px;
+  }
+
+  .table_cell_role {
+    width: 150px;
+    padding-right: 16px;
+  }
+  .table_cell_comment {
+    padding-right: 16px;
+  }
+  .table_cell_actions {
+    padding-right: 16px;
+    .cel_actions_row {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      justify-content: flex-end;
+    }
+  }
+}

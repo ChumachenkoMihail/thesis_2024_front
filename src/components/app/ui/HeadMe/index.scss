@@ -1,0 +1,13 @@
+.head_search {
+  .head_action {
+    .kermit_btn {
+      padding: 4px 5px;
+      width: 30px;
+      height: 30px;
+      border-radius: 22px;
+      &:before {
+        content: none;
+      }
+    }
+  }
+}

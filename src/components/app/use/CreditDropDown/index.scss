@@ -1,0 +1,32 @@
+.user_credit_drop {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  .kermit_dropdown {
+    .dropdown_button {
+      span {
+        max-width: 35px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+    .dropdown_select {
+      .head_actions_item {
+        width: 320px;
+      }
+    }
+  }
+  .credit_count {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #006eff;
+    svg {
+      width: 12px !important;
+      height: 12px !important;
+      path {
+        fill: #ffffff !important;
+      }
+    }
+  }
+}

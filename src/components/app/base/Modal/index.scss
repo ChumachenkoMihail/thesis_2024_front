@@ -1,0 +1,120 @@
+.modal_wrapper {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(44 50 59 / 25%);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  &.none_border {
+    &.modal_wrapper_light {
+      .wrapper_inner {
+        border: none;
+      }
+    }
+  }
+  &.modal_wrapper_light {
+    background: rgb(44 50 59 / 25%);
+    .wrapper_inner {
+      border: 12px solid rgb(0 110 255 / 25%);
+      box-shadow: 0 0 4px 0 #3a424d1a;
+      .inner_content {
+        background: #f6f8fa;
+        .modal_head {
+          .head_title {
+            .head_sub-title {
+              color: #69788c;
+            }
+          }
+
+          .close rect {
+            fill: #f0f2f4;
+          }
+        }
+      }
+      .modal_action {
+        .kermit_btn {
+          &.clear {
+            color: #020202 !important;
+          }
+          &.kermit_light {
+            color: #1cb300;
+          }
+        }
+      }
+    }
+  }
+  .wrapper_outer {
+    .inner_content {
+      min-width: 520px;
+    }
+  }
+  .wrapper_inner {
+    width: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    border: 12px solid rgba(0, 110, 255, 0.25);
+    .inner_content {
+      padding: 20px;
+      gap: 24px;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      z-index: 1;
+      background: #2c323b;
+      .modal_head {
+        .head-row-top {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          gap: 40px;
+          .head_title {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            .title svg path {
+              fill: #006eff;
+            }
+            .head_sub-title {
+              color: #d1d5db;
+              font-size: 20px;
+              font-weight: 700;
+              line-height: 26px;
+            }
+          }
+        }
+        .head-row-bottom {
+          margin: 32px 0 0 0;
+        }
+        .close {
+          cursor: pointer;
+          width: 26px;
+          height: 26px;
+
+          rect {
+            fill: #3a424d;
+          }
+        }
+      }
+    }
+    .modal_action {
+      display: flex;
+      justify-content: flex-end;
+      gap: 16px;
+      align-items: center;
+      margin: 24px 0 0 0;
+    }
+  }
+  &.export_wrapper {
+    align-items: start;
+    .wrapper_inner {
+      max-width: 100%;
+      overflow-y: auto;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.call_form {
+  display: flex;
+  flex-direction: column;
+}
+
+.call_list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 25px 0 0 0;
+}
+
+.column_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}

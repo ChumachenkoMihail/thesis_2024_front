@@ -1,0 +1,13 @@
+.logo_wrapper {
+  width: 42px;
+  height: 42px;
+  background: #BAC1CA;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &.logo_wrapper_light {
+    background: #fff;
+  }
+}

@@ -1,0 +1,17 @@
+.profile_actions {
+  display: grid;
+  gap: 16px;
+  .profile_action_item {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    color: #2c323b;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  &.profile_actions_dark {
+    .profile_action_item {
+      color: #d1d5db;
+    }
+  }
+}

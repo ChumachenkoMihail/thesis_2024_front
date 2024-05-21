@@ -1,0 +1,316 @@
+.rc-slider-tooltip {
+  visibility: visible !important;
+  z-index: 9999 !important;
+}
+
+.limit_field {
+  .field_wrapper {
+    &:nth-child(1) {
+      max-width: 80px;
+    }
+    &:nth-child(2) {
+      max-width: 140px;
+    }
+    &:nth-child(3) {
+      max-width: 200px;
+    }
+  }
+}
+
+.search_form {
+  margin-top: 12px;
+  max-width: 1250px;
+
+  .range_age_value {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    color: #d1d5db;
+    opacity: 1;
+  }
+
+  .drop_area {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 0 0 18px 0;
+    gap: 10px;
+    &.drop_area_light {
+      .drop-file-container {
+        border: 2px dashed #d1d5db;
+        &.can_drop-file {
+          border: 2px dashed #8abcff;
+        }
+        .dropped_view {
+          .can_drop_view {
+            border-radius: 16px;
+            background: #e6f1ff;
+          }
+          h4 {
+            color: #9ba5b2;
+          }
+          p {
+            color: #69788c;
+          }
+          svg {
+            path {
+              fill: #9ba5b2;
+            }
+          }
+        }
+      }
+      .dropped_off {
+        color: #2c323b;
+        svg {
+          path {
+            fill: #004eb5;
+          }
+        }
+      }
+    }
+    .drop-file-container {
+      position: relative;
+      max-width: 200px;
+      min-width: 200px;
+      height: 146px;
+      border-radius: 16px;
+      border: 2px dashed #4b5563;
+      overflow: hidden;
+      &.can_drop-file {
+        border: 2px dashed #8abcff;
+      }
+      .dropped_view {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: relative;
+        gap: 4px;
+        .can_drop_view {
+          border-radius: 16px;
+          background: #3a424d;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+        }
+        h4 {
+          color: #9ba5b2;
+        }
+        p {
+          color: #8793a3;
+          text-align: center;
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 140%;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+        svg {
+          path {
+            fill: #69788c;
+          }
+        }
+      }
+      .drop-file-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        height: 100%;
+        .kermit_btn {
+          min-width: 135px;
+          max-width: 135px;
+          overflow: hidden;
+          svg {
+            width: 18px;
+            height: 18px;
+          }
+        }
+
+        .drop-title {
+          font-weight: 400;
+          font-size: 14px;
+          color: #ffffff;
+        }
+      }
+    }
+    .dropped_off {
+      color: #d1d5db;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%; /* 24px */
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+      svg {
+        path {
+          fill: #004eb5;
+        }
+      }
+    }
+    .drop_actions {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  &.search_form_light {
+    .range_age_value {
+      color: #020202;
+      opacity: 1;
+    }
+    .search_form_row {
+      .search_form_column {
+        .search_help_wrapp {
+          color: #69788c;
+          .helped_title {
+            text-align: center;
+            color: #69788c;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }
+  .search_form_row {
+    display: flex;
+    gap: 28px;
+    justify-content: space-between;
+    .search_form_column {
+      max-width: 455px;
+      width: 100%;
+      &:first-child {
+        max-width: 210px;
+      }
+      &.column_block {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .column_item {
+          padding: 0 !important;
+          gap: 10px;
+        }
+      }
+
+      .search_help_wrapp {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 17px;
+        color: #69788c;
+        .helped_title {
+          margin-bottom: 4px;
+        }
+        .search_help_column {
+          padding: 0 0 0 20px;
+          margin: 0 0 20px 0;
+          li {
+            list-style: initial;
+          }
+        }
+        .search_bulk_actions {
+          display: grid;
+          gap: 10px;
+        }
+      }
+
+      .column_item {
+        padding: 18px 0;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        &:last-child {
+          border-bottom: none;
+          padding: 10px 0 0 0;
+        }
+        &:first-child {
+          padding: 0 0 10px 0;
+        }
+        .item_row {
+          display: flex;
+          gap: 12px;
+          align-items: center;
+          &.col-2-12 {
+            flex: 0 1 calc((100% - 12px) / 2);
+            .field_wrapper {
+              flex: 0 1 calc((100% - 12px) / 2);
+            }
+          }
+          &.self {
+            justify-content: space-between;
+            align-items: flex-end;
+            .field_wrapper {
+              width: 100%;
+            }
+          }
+          .row_column {
+            display: grid;
+            gap: 6px;
+            width: 100%;
+            .field_wrapper {
+              .field {
+                height: 35px;
+              }
+            }
+          }
+        }
+        &.item_row {
+          flex-direction: initial;
+          gap: 12px;
+          .field_wrapper {
+            width: 100%;
+          }
+        }
+
+        .column_title {
+          font-weight: 400;
+          font-size: 16px;
+          color: #ffffff;
+          margin: 0 0 4px 0;
+        }
+      }
+    }
+  }
+  .additional_empty {
+    //position: absolute;
+    //left: 50%;
+    //bottom: 10%;
+    //transform: translate(-50%);
+    text-align: left;
+    white-space: nowrap;
+    color: #e80000;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 15px 0;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .column_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    .action_error {
+      max-width: 410px;
+      word-break: break-word;
+    }
+
+    & > div {
+      align-self: flex-end;
+    }
+  }
+}

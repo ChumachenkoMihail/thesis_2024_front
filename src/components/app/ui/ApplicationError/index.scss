@@ -1,0 +1,19 @@
+.kermit_broken{
+  min-height: 100vh;
+  padding: 200px 0;
+  .broken_container{
+    background-color: #f0f2f4;
+    border-radius: 36px;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+  }
+  &.broken_dark{
+    .broken_container{
+      background-color: #2c323b;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.folders_wrapp_form{
+  .title{
+    margin: 0 0 16px 0;
+  }
+  .folders_actions{
+    padding: 0 0 24px 0;
+    border-bottom: 1px solid #4B5563;
+
+    .title{
+      margin: 0 0 16px 0;
+    }
+    .folders_actions_row{
+      display: grid;
+      grid-template-columns: 1fr 175px;
+      gap: 16px;
+      align-items: flex-end;
+    }
+  }
+  &.folders_wrapp_light{
+    .hr{
+      background: #D1D5DB;
+    }
+    .folders_actions{
+      border-bottom: 1px solid #D1D5DB;
+    }
+  }
+  .folders_column{
+    gap: 12px;
+    flex-direction: column;
+    display: flex;
+  }
+  .hr{
+    margin: 20px 0;
+    height: 1px;
+    width: 100%;
+    background: #4B5563;
+  }
+}
+

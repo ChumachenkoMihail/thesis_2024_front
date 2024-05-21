@@ -1,0 +1,29 @@
+.confirmation_modal {
+  &.confirm_light {
+    .confirmation_modal-content {
+      .content_message {
+        color: #2c323b;
+      }
+    }
+  }
+  .confirmation_modal-content {
+    display: grid;
+    gap: 32px;
+    .content_message {
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 22px;
+      color: #f6f8fa;
+    }
+    .confirm_actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .buttons_actions {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.binded_ankets {
+  width: 100%;
+  .binded_ankets-column {
+    display: grid;
+    gap: 16px;
+    li {
+      overflow-y: hidden;
+      overflow-x: auto;
+      width: 100%;
+      display: grid;
+      gap: 16px;
+      h3 {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+  &.binded_ankets-light {
+    .binded_ankets-column {
+      li {
+      }
+    }
+  }
+}

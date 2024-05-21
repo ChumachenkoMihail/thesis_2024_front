@@ -1,0 +1,22 @@
+.table_control{
+  padding: 0 0 0 16px;
+  &.light_control{
+    p{
+      color: rgba(2, 2, 2, 1);
+      opacity: 1;
+    }
+  }
+  p{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin: 10px 0 15px;
+  }
+  .control_column_actions{
+    flex-direction: column;
+    gap: 15px;
+    display: flex;
+  }
+}

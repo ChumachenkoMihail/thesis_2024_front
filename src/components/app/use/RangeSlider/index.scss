@@ -1,0 +1,28 @@
+.kermit_range_wrapper {
+  padding: 0 15px;
+  .kermit_range_age {
+    .rc-slider-track {
+      height: 6px;
+      background: #006eff;
+    }
+    .rc-slider-rail {
+      height: 6px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    .rc-slider-handle {
+      opacity: 1;
+      width: 16px;
+      height: 16px;
+      background-color: #006eff;
+      border: solid 2px #006eff;
+      box-shadow: none;
+    }
+  }
+  &.range_light {
+    .kermit_range_age {
+      .rc-slider-rail {
+        background: #f0f2f4;
+      }
+    }
+  }
+}

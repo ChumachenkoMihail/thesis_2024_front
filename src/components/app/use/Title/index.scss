@@ -1,0 +1,43 @@
+.title {
+  font-weight: 700;
+  color: #d1d5db;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+
+  &.title_light {
+    color: #2c323b;
+
+    svg {
+      path {
+        fill: #006eff;
+      }
+    }
+  }
+  &.title_secondary {
+    color: #8793a3;
+  }
+  &.title_light {
+    &.title_secondary {
+      color: #69788c;
+    }
+  }
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}

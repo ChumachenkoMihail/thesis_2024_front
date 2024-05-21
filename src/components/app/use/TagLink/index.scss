@@ -1,0 +1,25 @@
+.tag_link {
+  color: #b0d2ff;
+  text-decoration: underline;
+  transition: color 0.15s;
+
+  &:hover {
+    color: #549eff;
+  }
+
+  &:visited {
+    color: #d1d5db;
+  }
+
+  &.tag_link_light {
+    color: #002e6b;
+
+    &:hover {
+      color: #004EB5;
+    }
+
+    &:visited {
+      color: #2C323B;
+    }
+  }
+}

@@ -1,0 +1,5 @@
+.get_contact_view {
+  grid-template-columns: repeat(2, 1fr);
+  display: grid;
+  gap: 8px;
+}

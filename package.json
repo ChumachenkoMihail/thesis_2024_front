@@ -1,0 +1,72 @@
+{
+  "name": "kermit-front",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "awesome-phonenumber": "^6.2.0",
+    "axios": "^1.6.7",
+    "buffer": "^6.0.3",
+    "file-saver": "^2.0.5",
+    "formik": "^2.2.9",
+    "gsap": "^3.12.5",
+    "html2pdf.js": "^0.10.1",
+    "jszip": "^3.10.1",
+    "moment": "^2.29.4",
+    "rc-slider": "^10.1.1",
+    "react": "^18.2.0",
+    "react-audio-player": "^0.17.0",
+    "react-datepicker": "^4.10.0",
+    "react-dnd": "^16.0.1",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-google-charts": "^4.0.1",
+    "react-input-verification-code": "^1.0.2",
+    "react-phone-input-2": "^2.15.1",
+    "react-qrcode-logo": "^2.8.0",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^6.22.3",
+    "react-scripts": "^5.0.1",
+    "react-select": "^5.7.2",
+    "react-select-multi-level": "^1.0.1",
+    "react-table": "^7.8.0",
+    "react-tooltip": "^5.13.1",
+    "sass": "^1.53.0",
+    "sonner": "^1.2.0",
+    "styled-components": "^6.1.1",
+    "swiper": "^9.2.0",
+    "uuid": "^9.0.0",
+    "web-vitals": "^2.1.4",
+    "xml-js": "^1.6.11",
+    "yup": "^0.32.11"
+  },
+  "scripts": {
+    "start:dev": "set PORT=3001 && react-scripts start --env=dev",
+    "build:dev": "react-scripts build --env=dev",
+    "build:prod": "react-scripts build --env=prod",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.18.0",
+    "prettier": "3.0.3"
+  }
+}
