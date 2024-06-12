@@ -9,7 +9,7 @@ const Page404 = () => {
     <div className="kermit_404">
       <Title Tag="h1">404</Title>
       <Title Tag="h2">Not Found 🙈</Title>
-      <Button func={() => navigate("/search")}>На главную</Button>
+      <Button func={() => navigate("/organizations")}>На главную</Button>
     </div>
   );
 };

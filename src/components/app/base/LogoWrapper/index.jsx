@@ -10,7 +10,7 @@ const LogoWrapper = () => {
 
   return (
     <div className={`logo_wrapper ${isDarkTheme ? "" : "logo_wrapper_light"}`}>
-      <NavLink to="/search">
+      <NavLink to="/organizations">
         <img src={Logo} alt="" />
       </NavLink>
     </div>

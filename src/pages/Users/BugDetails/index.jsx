@@ -549,7 +549,7 @@ const BugDetails = ({cancel}) => {
                             </div>
 
                             <div className={`${isDarkTheme ? "bebbra" : ""}`} style={{padding: '8x', display: "grid", gap: '15px', paddingTop: '30px'}}>
-                                COMMENTS
+                                Коментарі
                                 {values?.Comments?.length > 0 ?
                                 <List>
                                     {values?.Comments?.map((comment)=> {

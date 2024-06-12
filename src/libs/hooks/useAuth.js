@@ -16,7 +16,7 @@ import {
   markNotifAsRead,
   me,
   setNotifAsRead,
-  userNotifications
+  userNotifications, userOrgsWithProjects
 } from "store/thunks/searchThunks";
 import Loader from "../../components/app/use/Loader";
 import DropDown from "../../components/app/use/DropDown";
@@ -65,7 +65,6 @@ export const AuthProvider = ({ children }) => {
   const handleAcceptInvite = (orgId) => {
     dispatch(acceptInvite(orgId))
     dispatch(userNotifications())
-
   };
 
   const handleDeclineInvite = (orgId) => {

@@ -51,7 +51,7 @@ const Register = () => {
       <div className={`kermit_login ${isDarkTheme ? "" : "light_login"}`}>
         <div className="login_wrapper">
           <LogoWrapper />
-          <Title Tag="h4">Detective Kermit</Title>
+          <Title Tag="h4">Bugira</Title>
           <form
               autoComplete="off"
               className="login_form"
